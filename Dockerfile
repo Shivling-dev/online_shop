@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy all files (AFTER installing dependencies)
+# Copy all files 
 COPY . .
 
 # Expose Vite's default port
